@@ -11,7 +11,7 @@ RUN apt-get update && \
       	wget \
       	unzip
 
-RUN wget https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.xz
+RUN wget https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.xz \
     && mkdir usr/local/lib/nodejs \
     && xz -d node-v10.16.0-linux-x64.tar.xz \
     && tar -xvf node-v10.16.0-linux-x64.tar \
