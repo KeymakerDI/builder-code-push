@@ -18,8 +18,8 @@ RUN wget https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.xz \
     && mkdir usr/local/lib/nodjs \
     && mv node-v10.16.0-linux-arm64 usr/local/lib/nodejs \
     && cd usr/local/lib/nodejs/ \
-    && echo "VERSION=v10.16.0" >> ~/.profile
+    && echo "VERSION=v10.16.0" >> ~/.profile \
     && echo "DISTRO=linux-x64" >> ~/.profile \
     && echo "export PATH=/usr/local/lib/nodejs/node-v10.16.0-linux-x64/bin:$PATH" >> ~/.profile \
     && source ~/.profile \
-    && npm install -g code-push-cli \
+    && npm install -g code-push-cli
