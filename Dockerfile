@@ -5,9 +5,6 @@ RUN apt-get update && \
     	apt-utils \
         bash \
         git \
-        python3-pip \
-	    expect \
-      	expect-dev \
       	wget \
       	unzip
 
