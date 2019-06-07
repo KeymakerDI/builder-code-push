@@ -1,4 +1,15 @@
-from node:10.16.0-alpine
+from debian:stretch-slim
+
+RUN apt-get update && \
+    apt-get install -y \
+    	apt-utils \
+        bash \
+        git \
+        python3-pip \
+	    expect \
+      	expect-dev \
+      	wget \
+      	unzip
 
 RUN wget https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.xz \
     && mkdir usr/local/lib/nodejs \
