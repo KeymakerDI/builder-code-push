@@ -7,7 +7,9 @@ RUN apt-get update && \
         git \
       	wget \
       	unzip \
-      	xz-utils
+      	xz-utils \
+        expect \
+    	expect-dev
 
 RUN wget https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.xz \
     && mkdir /usr/local/lib/nodejs \
